@@ -5,18 +5,21 @@ const menuItems = document.getElementById('menu_items')
 const navItem = document.getElementsByClassName ('nav_item')
 let navMenuHidden
 
+const menuItem = [
+    'Home', 'Collections', 'About Us', 'Login', '<img width="30px" src="./resources/images/shopping_cart.svg" alt="">'
+]
+
 menuIcon.addEventListener('click', ()=>{
     renderMobileMenu()
-
 })
 menuItems.addEventListener('click', ()=>{
     renderMobileMenu()
-    console.log('click')
+    
 })
 
 const renderMobileMenu =()=>{
     navMenuHidden = !navMenuHidden
-    console.log(navMenuHidden)
+
     
     if(!navMenuHidden){
         menuItems.classList.remove('nav_active')

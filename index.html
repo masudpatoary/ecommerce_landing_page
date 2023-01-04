@@ -14,18 +14,22 @@
 
         <nav class="nav flex_content container">
             <a href="#" class="brand">Brand</a>
-            <div id="menu_icon" class="nav_toggle display_hidden flex_content">
-                <img id="menu_open_icon" width="35px" src="./resources/images/menu_open_icon.svg" />
+
+            <div class="flex_content menu_item_container">
+                <ul id="menu_items" class="nav_wrapper nav_inactive flex_content">
+                    <li id="nav_items_home" class="nav_item"><a href="#">Home</a></li>
+                    <li id="nav_items_collections" class="nav_item"><a href="#">Collections</a></li>
+                    <li id="nav_items_aboutus" class="nav_item"><a href="#">About Us</a></li>
+                    <li id="nav_items_login" class="nav_item"><a href="#">Login</a></li>
+                </ul>
+                <a href="#"><img width="30px" class="shop_cart" src="./resources/images/shopping_cart.svg" alt=""></a>
+                <div id="menu_icon" class="nav_toggle display_hidden flex_content">
+                    <img id="menu_open_icon" width="35px" src="./resources/images/menu_open_icon.svg" />
+                </div>
             </div>
-            <ul id="menu_items" class="nav_wrapper nav_inactive flex_content">
-                <li class="nav_item"><a href="#">Home</a></li>
-                <li class="nav_item"><a href="#">About</a></li>
-                <li class="nav_item"><a href="#">Services</a></li>
-                <li class="nav_item"><a href="#">Hire us</a></li>
-                <li class="nav_item"><a href="#">Contact</a></li>
-            </ul>
+
         </nav>
-        <section class="banner container flex_content">
+        <section class="banner section_gap container flex_content">
             <div class="" id="banner_text_container">
                 <h1>Lets Dive into<br><span>Havenly Music</span></h1>
                 <p class="">
@@ -34,7 +38,7 @@
                 </p>
                 <div class="header_btns_container flex_content">
                     <a class="" href="" id="buy_btn">Buy Now</a>
-                    <a class="" href="" id="explore_btn" >Explore</a>
+                    <a class="" href="" id="explore_btn">Explore</a>
                 </div>
             </div>
             <div class="" id="banner_img">
@@ -43,6 +47,32 @@
         </section>
 
     </header>
+    <section class="container section_gap">
+        <h2>Excellient Features</h2>
+        <div class="flex_content feature_container" id="">
+            <div class="features_div" id="">
+                <div class="single_feature">
+                    <div class="feature_list flex_content" id="">
+                        <img width="20px" src="./resources/images/shopping_cart.svg" alt="">
+                        <h4>lerem ipsum doller</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                    </div>
+                    <div class="feature_bg" id=""></div>
+                </div>
+            </div>
+            <!-- feature banner image -->
+            <div class="feature_banner flex_content" id="">
+
+                <img width="80%" src="./resources/images/banner_1.png" alt="">
+
+            </div>
+
+            <div class="features_div" id="">
+
+            </div>
+        </div>
+    </section>
+
 
     <script src="./resources/js/script.js"></script>
 </body>
