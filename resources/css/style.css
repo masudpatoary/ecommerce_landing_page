@@ -326,6 +326,8 @@ p {
 }
 
 #product_container {
+    position: relative;
+    top: 40px;
     flex-wrap: nowrap;
     height: 250px;
     justify-content: space-around;
