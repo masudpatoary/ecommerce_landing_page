@@ -39,7 +39,6 @@ const allProduct = [
         img: './resources/images/product_4.png',
         bgUrl: './resources/images/product_bg_4.svg'
     }
-
 ]
 
 menuIcon.addEventListener('click', () => {
@@ -52,8 +51,6 @@ menuItems.addEventListener('click', () => {
 
 const renderMobileMenu = () => {
     navMenuHidden = !navMenuHidden
-
-
     if (!navMenuHidden) {
         menuItems.classList.remove('nav_active')
         menuItems.classList.add('nav_inactive')
@@ -71,21 +68,18 @@ const renderMobileMenu = () => {
 
 
 const createProductDiv = () => {
-    
-    
     for (let i = 0; i < allProduct.length; i++) {
         let productDiv = document.createElement('div');productDiv.classList.add('new_product_single');
         productDiv.style.backgroundImage = `url(${allProduct[i]?.bgUrl})`
-        console.log(i)
+        // console.log(i)
         productDiv.innerHTML=`
             <img width="180px" src=${allProduct[i].img} alt="">
             <h3>${allProduct[i].productTitle}</h3>
             <p>$ ${allProduct[i].price}</p>
             <button class="buy_btn"><a href="">Buy Now</a></button>
         `
-        console.log(productDiv)
+        // console.log(productDiv)
         productContainer.appendChild(productDiv)  
-    }
-    
+    }    
 }
 createProductDiv()
