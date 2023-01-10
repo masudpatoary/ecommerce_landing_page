@@ -1,7 +1,7 @@
 
 const reviewCardContainer = document.getElementById('review_container')
 
-const starSvg = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve"> <polygon   points="6.48,6.5 -0.38,7.58 4.67,12.45 3.59,19.48 9.85,16.24 16.03,19.48 14.95,12.63 20,7.58 13.15,6.68 9.85,0.13 " /> </svg>'
+const starSvg = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve"> <polygon   points="6.48,6.5 -0.38,7.58 4.67,12.45 3.59,19.48 9.85,16.24 16.03,19.48 14.95,12.63 20,7.58 13.15,6.68 9.85,0.13 " /></svg>'
 
 const allreviews = [
     {
@@ -40,7 +40,7 @@ renderReviewCard = () => {
     for (let i = 0; i < allreviews.length; i++) {
         let rating = allreviews[i]?.reviewRating
         let reviewCard = document.createElement('div');
-        reviewCard.classList.add('item');
+        reviewCard.classList.add('review_card');
 
         const renderRating = () => {            
 
@@ -72,7 +72,6 @@ renderReviewCard = () => {
             </div>
         </div>
         `
-        // console.log(reviewCard)
         reviewCardContainer.appendChild(reviewCard)
 
 
@@ -84,11 +83,12 @@ renderReviewCard()
 
 
 const nextSlide = () => {
-    const widthItem = document.querySelector('.item').offsetWidth;
+    const widthItem = document.querySelector('.review_card').offsetWidth;
+    console.log(widthItem)
     document.getElementById('formList').scrollLeft += widthItem;
 }
 const previousSlide = () => {
-    const widthItem = document.querySelector('.item').offsetWidth;
+    const widthItem = document.querySelector('.review_card').offsetWidth;
     document.getElementById('formList').scrollLeft -= widthItem;
 }
 

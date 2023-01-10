@@ -41,6 +41,26 @@ const allProduct = [
     }
 ]
 
+function activeAnimation() {
+    const sectionEl = document.querySelectorAll(".scroll_down_anm");
+
+    for (let i = 0; i < sectionEl.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = sectionEl[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            sectionEl[i].classList.add("active");
+            
+        } else {
+            sectionEl[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", activeAnimation);
+
+
 menuIcon.addEventListener('click', () => {
     renderMobileMenu()
 })
@@ -69,17 +89,17 @@ const renderMobileMenu = () => {
 
 const createProductDiv = () => {
     for (let i = 0; i < allProduct.length; i++) {
-        let productDiv = document.createElement('div');productDiv.classList.add('new_product_single');
+        let productDiv = document.createElement('div'); productDiv.classList.add('new_product_single');
         productDiv.style.backgroundImage = `url(${allProduct[i]?.bgUrl})`
         // console.log(i)
-        productDiv.innerHTML=`
+        productDiv.innerHTML = `
             <img width="180px" src=${allProduct[i].img} alt="">
             <h3>${allProduct[i].productTitle}</h3>
             <p>$ ${allProduct[i].price}</p>
             <button class="buy_btn"><a href="">Buy Now</a></button>
         `
         // console.log(productDiv)
-        productContainer.appendChild(productDiv)  
-    }    
+        productContainer.appendChild(productDiv)
+    }
 }
 createProductDiv()

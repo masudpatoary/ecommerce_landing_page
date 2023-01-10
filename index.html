@@ -13,7 +13,9 @@
     <header class="site-header">
 
         <nav class="nav flex_content container">
-            <a href="#" class="brand">Brand</a>
+            <a href="#" class="brand">
+                <img src="./resources/images/logo.svg" width="140px" alt="" srcset="">
+            </a>
 
             <div class="flex_content menu_item_container">
                 <ul id="menu_items" class="nav_wrapper nav_inactive flex_content">
@@ -49,10 +51,10 @@
         </section>
 
     </header>
-    <section class="container section_gap feature_sec">
+    <section class="container section_gap feature_sec scroll_down_anm">
         <h2>Take a look around<br><span class="orange_text">Features</span></h2>
         <div class="flex_content feature_container" id="">
-            <div class="features_div " id="">
+            <div class="features_div scroll_down_anm fade-left" id="">
                 <div class="single_feature feature_1">
                     <div class="feature_list flex_content" id="">
                         <img width="30px" src="./resources/images/shopping_cart.svg" alt="">
@@ -85,7 +87,7 @@
 
             </div>
 
-            <div class="features_div" id="">
+            <div class="features_div scroll_down_anm fade-right" id="">
                 <div class="single_feature feature_4">
                     <div class="feature_list flex_content" id="">
                         <img width="30px" src="./resources/images/shopping_cart.svg" alt="">
@@ -113,8 +115,8 @@
             </div>
         </div>
     </section>
-    <section class="container service_section">
-        <h2>Why buy directly from Musify?</h2>
+    <section class="container service_section scroll_down_anm fade-bottom">
+        <h2>Why buy from hifitune?</h2>
         <div class="section_gap flex_content service_list">
             <div class="flex_content single_service">
                 <img width="30px" src="./resources/images/shopping_cart.svg" alt="" class="">
@@ -130,44 +132,122 @@
             </div>
         </div>
     </section>
-    <section class="container section_gap product_secr">
-        <h2>New available</h2>
+    <section class="container  product_secr section_gap scroll_down_anm fade-bottom">
+        <h2>Other Virsion</h2>
         <div class="flex_content " id="product_container"></div>
         <div class="product_container_bg"></div>
     </section>
-    <section class="container section_gap flex_content review_section">
-        <h2 class="review_title">Here what people say about us</h2>
+    <section class="container section_gap flex_content review_section scroll_down_anm fade-bottom">
+        <h2 class="review_title">Here what people say about hifitune</h2>
         <div class="review_slider">
             <div id="formList">
                 <div class="flex_content review_container" id="review_container">
-                    <!-- <div class="item">
-                        <img src="Nami.png" class="avatar">
-                        <h3>Name</h3>
-                        <div class="content">
-                            <h4><span>"</span> ipsum dolor, sit amet consectetur.<span>"</span></h4>
-                            <div class="review_star ">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
-                                    style="enable-background:new 0 0 20 20;" xml:space="preserve">
-                                    <polygon class="st0"
-                                        points="6.48,6.5 -0.38,7.58 4.67,12.45 3.59,19.48 9.85,16.24 16.03,19.48 14.95,12.63 20,7.58 13.15,6.68 9.85,0.13 " />
-                                </svg>
-
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
-            <div class="direction">
-                <button id="prev" onclick="nextSlide()">
-                    < </button>
-                        <button id="next" onclick="previousSlide()"> > </button>
+            <div class="review_btns flex_content">
+                <button class="flex_content" id="prev" onclick="nextSlide()">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"
+                        role="img">
+                        <title>Previous review</title>
+                        <path d="M17.64 23.99 5.65 12 17.64.01l.71.7L7.06 12l11.29 11.29-.71.7z"></path>
+                    </svg>
+                </button>
+                <button class="flex_content" id="next" onclick="previousSlide()">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"
+                        role="img">
+                        <title>Next review</title>
+                        <path d="M6.36 23.99 18.35 12 6.36.01l-.71.7L16.94 12 5.65 23.29l.71.7z"></path>
+                    </svg>
+                </button>
             </div>
         </div>
 
     </section>
+    <section class="container section_gap flex_content subscribe_sec scroll_down_anm fade-bottom">
+        <div class="subscribe_container" id="">
 
-
+            <h2>Subscribe our newsletter</h2>
+            <div class="flex_content">
+                <input type="email" placeholder="Your email">
+                <button class="subscribe_btn" id="subscribe_btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-middle">
+            <div class="container">
+                <div class="flex_content footer_sec">
+                    <div class="footer_col">
+                        <div>
+                            <h4>Customer Care</h4>
+                            <p><a href="#">About Us</a></p>
+                            <p><a href="#">Help Center</a></p>
+                            <p><a href="#">Terms & Conditions</a></p>
+                            <p><a href="#">FAQs</a></p>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Careers</a></p>
+                        </div>
+                    </div>
+                    <div class="footer_col">
+                        <!--Column1-->
+                        <div>
+                            <h4>Contact us</h4>
+                            <p>Email: support@hifitune.com</p>
+                            <p>Phone: +1 (0) 000 0000 001</p>
+                            <p>Fax: +1 (0) 000 0000 002</p>
+                        </div>
+                    </div>
+                    <div class="footer_col">
+                        <div>
+                            <h4>Address</h4>
+                            <p>1234 Street Name</p>
+                            <p>City, AA 99999</p>
+                        </div>
+                    </div>
+                    <div class="footer_col social_link">
+                        <h4>Follow Us</h4>
+                        <div class="social_network">
+                            <a href="#" title="Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="#ffffff">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+                                </svg>
+                            </a>
+                            <a href="#" title="Youtube">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="#ffffff">
+                                    <path
+                                        d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z" />
+                                </svg>
+                            </a>
+                            <a href="#" title="Youtube">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="#ffffff">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+                                    </svg>
+                            </a>
+                            <a href="#" title="Youtube">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="#ffffff">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="copy">
+                        <p class="">&copy; Copyright
+                            <script>document.write(new Date().getFullYear())</script> - Hifitune. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./resources/js/script.js"></script>
     <script src="./resources/js/review_slider_script.js"></script>
