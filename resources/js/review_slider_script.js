@@ -7,31 +7,45 @@ const allreviews = [
     {
         id: 'zfiusyhdbcv',
         clientName: 'Alen',
-        clientReview: 'Lorem ipsum doller sit amet',
+        clientReview: 'Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet',
         reviewRating: 5,
-        img: './resources/images/product_1.png'
+        img: './resources/images/review_profile_img/person_1.jpg'
     },
     {
         id: 'njiusyhdbfb',
         clientName: 'Alen',
-        clientReview: 'Lorem ipsum doller sit amet',
+        clientReview: 'Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet',
         reviewRating: 5,
-        img: './resources/images/product_2.png'
+        img: './resources/images/review_profile_img/person_2.jpg'
     },
     {
         id: 'dfzviusyhdbvv',
         clientName: 'Alen',
-        clientReview: 'Lorem ipsum doller sit amet',
+        clientReview: 'Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet',
         reviewRating: 4,
-        img: './resources/images/product_3.png'
+        img: './resources/images/review_profile_img/person_3.jpg'
     },
     {
         id: 'xvxiusyhdbvv',
         clientName: 'Alen',
         clientReview: 'Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet',
         reviewRating: 5,
-        img: './resources/images/product_4.png'
-    }
+        img: './resources/images/review_profile_img/person_4.jpg'
+    },
+    {
+        id: 'zfiusyhdbcv',
+        clientName: 'Alen',
+        clientReview: 'Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet',
+        reviewRating: 5,
+        img: './resources/images/review_profile_img/person_1.jpg'
+    },
+    {
+        id: 'njiusyhdbfb',
+        clientName: 'Alen',
+        clientReview: 'Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet Lorem ipsum doller sit amet',
+        reviewRating: 5,
+        img: './resources/images/review_profile_img/person_2.jpg'
+    },
 ]
 
 
@@ -67,7 +81,7 @@ renderReviewCard = () => {
         <img src=${allreviews[i]?.img} class="avatar">
         <h3>${allreviews[i]?.clientName}</h3>
         <div class="content">
-            <p><span class='quote_'>"</span>${allreviews[i]?.clientReview}<span class='quote_'>"</span></p>
+            <p>"${allreviews[i]?.clientReview}"</p>
             <div class="review_star " id="review_star_${i}" >${renderRating()}  
             </div>
         </div>

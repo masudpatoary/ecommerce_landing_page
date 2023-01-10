@@ -115,10 +115,7 @@ li {
 }
 
 .brand {
-    font-family: Roboto;
-    font-size: 26px;
-    font-weight: 400;
-    color: rgb(218, 120, 0);
+
 }
 
 .nav_wrapper {
@@ -185,7 +182,7 @@ banner
 
 
 .orange_text {
-    color: rgb(255, 145, 0);
+    color: #ff9100;
 }
 
 #banner_text_container>p {
@@ -227,8 +224,8 @@ banner
 }
 
 .buy_btn {
-    background-color: rgb(255, 145, 0);
-    outline: rgb(255, 145, 0) solid 2px;
+    background-color: #ff9100;
+    outline: #ff9100 solid 2px;
     border: none;
     color: #ffffff;
     transition: linear 100ms;
@@ -236,24 +233,24 @@ banner
 
 #explore_btn {
     margin-left: 20px;
-    outline: rgb(255, 145, 0) solid 2px;
+    outline: #ff9100 solid 2px;
     color: #000000;
     transition: linear 100ms;
 }
-
+.review_btns button:hover,
 .buy_btn:hover,
 .subscribe_btn:hover,
 #explore_btn:hover {
-    background-color: rgb(253, 84, 12);
-    outline: rgb(253, 84, 12) solid 2px;
+    background-color: #fd540c;
+    outline: #fd540c solid 2px;
     color: #000000;
     outline: none;
 }
-
+.review_btns button:active,
 .buy_btn:active,
 #explore_btn:active,
 .subscribe_btn:active {
-    background-color: #ff6a00;
+    background-color: #ff9100;
     transform: translateY(2px);
 }
 
@@ -371,7 +368,7 @@ p {
 Service section
 //////////////////////  */
 .service_section {
-    background: linear-gradient(to left, #ff6a00, #9f4200);
+    background: linear-gradient(to left, #ff9100, #9f4200);
     border-radius: 15px;
     color: #ffffff;
     padding-top: 20px;
@@ -415,7 +412,7 @@ product cards
     z-index: 0;
     flex-wrap: wrap;
     height: 250px;
-    background-color: rgb(255, 195, 83);
+    background-color: #ff9100;
     border-radius: 35px;
 }
 
@@ -458,10 +455,14 @@ review slider
     overflow: auto;
     scroll-behavior: smooth;
     scroll-snap-type: both;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+
 }
 
 #formList::-webkit-scrollbar {
     display: none;
+
 }
 
 h4>span {
@@ -485,13 +486,17 @@ h4>span {
     justify-content: space-between;
 }
 
+.review_card>img{
+
+}
+
 .review_btns {
     justify-content: center;
 }
 
 .review_btns button {
     justify-content: center;
-    background-color: #ffab4544;
+    background-color: #fad8c0;
     border: none;
     width: 50px;
     height: 50px;
@@ -500,26 +505,18 @@ h4>span {
     transition: ease-in-out 200ms;
 }
 
-.review_btns button:hover {
-    background-color: #ff4e4e;
-}
-
-.review_btns button:active {
-    transform: translateY(2px);
-}
-
-.review_card.avatar {
+.review_card>img,
+.avatar {
     display: block;
     margin: 10px auto;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    box-shadow: 0 10px 15px #7e878d;
+    box-shadow: 0 10px 15px #7e878dbe;
 }
 
-.review_card.content {
+.review_card>.content {
     padding: 10px;
-    font-family: monospace;
 }
 
 .quote_ {
@@ -530,6 +527,7 @@ h4>span {
     display: flex;
     justify-content: center;
     gap: 4px;
+    margin-top: 10px;
 }
 
 .review_star>svg {
@@ -546,7 +544,7 @@ h4>span {
 
 .subscribe_container {
     padding: 50px 0px 100px;
-    background-color: #f3c789;
+    background-color: #F2A846;
     width: 70%;
     box-shadow: rgb(43, 49, 55) 0px 20px 30px -10px;
     justify-content: center;
