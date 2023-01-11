@@ -6,38 +6,34 @@ const navItem = document.getElementsByClassName('nav_item')
 const productContainer = document.getElementById('product_container')
 let navMenuHidden
 
-const menuItem = [
-    'Home', 'Collections', 'About Us', 'Login', '<img width="30px" src="./resources/images/shopping_cart.svg" alt="">'
-]
-
 const allProduct = [
     {
         id: 'zfxcv',
         productTitle: 'Headphone',
         price: 120,
-        img: './resources/images/product_1.png',
-        bgUrl: './resources/images/product_bg_1.svg'
+        img: './resources/images/product/product_1.png',
+        bgUrl: './resources/images/product/product_bg_1.svg'
     },
     {
         id: 'njxfb',
         productTitle: 'Headphone',
         price: 120,
-        img: './resources/images/product_2.png',
-        bgUrl: './resources/images/product_bg_2.svg'
+        img: './resources/images/product/product_2.png',
+        bgUrl: './resources/images/product/product_bg_2.svg'
     },
     {
         id: 'dfzvxvv',
         productTitle: 'Headphone',
         price: 120,
-        img: './resources/images/product_3.png',
-        bgUrl: './resources/images/product_bg_3.svg'
+        img: './resources/images/product/product_3.png',
+        bgUrl: './resources/images/product/product_bg_3.svg'
     },
     {
         id: 'xvxcvv',
         productTitle: 'Headphone',
         price: 120,
-        img: './resources/images/product_4.png',
-        bgUrl: './resources/images/product_bg_4.svg'
+        img: './resources/images/product/product_4.png',
+        bgUrl: './resources/images/product/product_bg_4.svg'
     }
 ]
 
@@ -74,13 +70,13 @@ const renderMobileMenu = () => {
     if (!navMenuHidden) {
         menuItems.classList.remove('nav_active')
         menuItems.classList.add('nav_inactive')
-        menuOpenIcon.setAttribute('src', './resources/images/menu_open_icon.svg')
+        menuOpenIcon.setAttribute('src', './resources/images/icons/menu_open_icon.svg')
 
     }
     if (navMenuHidden) {
         menuItems.classList.remove('nav_inactive')
         menuItems.classList.add('nav_active')
-        menuOpenIcon.setAttribute('src', './resources/images/menu_close_icon.svg')
+        menuOpenIcon.setAttribute('src', './resources/images/icons/menu_close_icon.svg')
     }
 }
 
