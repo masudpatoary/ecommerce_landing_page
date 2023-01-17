@@ -3,6 +3,7 @@ const menuOpenIcon = document.getElementById('menu_open_icon')
 const menuCloseIcon = document.getElementById('menu_close_icon')
 const menuItems = document.getElementById('menu_items')
 const navItem = document.getElementsByClassName('nav_item')
+const sectionEl = document.querySelectorAll(".scroll_down_anm");
 const productContainer = document.getElementById('product_container')
 let navMenuHidden
 
@@ -38,22 +39,26 @@ const allProduct = [
 ]
 
 function activeAnimation() {
-    const sectionEl = document.querySelectorAll(".scroll_down_anm");
-
     for (let i = 0; i < sectionEl.length; i++) {
         const windowHeight = window.innerHeight;
+        console.log(windowHeight)
         const elementTop = sectionEl[i].getBoundingClientRect().top;
         const elementVisible = 150;
-
         if (elementTop < windowHeight - elementVisible) {
             sectionEl[i].classList.add("active");
-            
+
         } else {
             sectionEl[i].classList.remove("active");
         }
     }
 }
 
+window.addEventListener("load", ()=>{
+    const windowHeight = window.innerHeight;
+    if (windowHeight > 834) {
+        activeAnimation()
+    }
+});
 window.addEventListener("scroll", activeAnimation);
 
 

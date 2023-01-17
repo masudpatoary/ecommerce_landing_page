@@ -99,10 +99,10 @@ renderReviewCard()
 const nextSlide = () => {
     const widthItem = document.querySelector('.review_card').offsetWidth;
     console.log(widthItem)
-    document.getElementById('formList').scrollLeft += widthItem;
+    document.getElementById('reviewList').scrollLeft += widthItem;
 }
 const previousSlide = () => {
     const widthItem = document.querySelector('.review_card').offsetWidth;
-    document.getElementById('formList').scrollLeft -= widthItem;
+    document.getElementById('reviewList').scrollLeft -= widthItem;
 }
 
