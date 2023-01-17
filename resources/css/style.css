@@ -666,6 +666,10 @@ footer a:hover {
 }
 
 @media(max-width: 991px) {
+    body>header
+    body>section{
+        padding: 0px 5px;
+    }
     #banner_img>img {
         max-width: 100%;
     }
