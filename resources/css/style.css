@@ -666,10 +666,10 @@ footer a:hover {
 }
 
 @media(max-width: 991px) {
-    body>header
-    body>section{
+    body>header body>section {
         padding: 0px 5px;
     }
+
     #banner_img>img {
         max-width: 100%;
     }
@@ -712,8 +712,12 @@ Review Slider
 @media(max-width: 769px) {
 
     /* ////////////////
-
+nav bar
 //////////////////////  */
+    nav {
+        padding: auto 5px;
+    }
+
     .menu_items {
         position: absolute;
         z-index: 9999;
