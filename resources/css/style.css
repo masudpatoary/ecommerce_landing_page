@@ -715,7 +715,7 @@ Review Slider
 nav bar
 //////////////////////  */
     nav {
-        padding: auto 5px;
+        /* padding: auto 5px; */
     }
 
     .menu_items {
